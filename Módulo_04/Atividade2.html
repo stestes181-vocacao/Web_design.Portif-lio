@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle Financeiro</title>
+    <!-- Será adicionando na próxima aula o arquivo css -->
+</head>
+<body>
+  <header>
+    <h1>Painel Financeiro</h1>
+  </header>  
+  <p>Meu controle financeiro pessoal</p>
+
+  <nav aria-label= "Navegação principal">
+    <ul>
+        <li><a href="resumo">Resumo</a></li>
+        <li><a href="graficos">Gráficos</a></li>
+        <li><a href="contas">Contas a pagar e receber</a></li>
+    </ul>
+</nav>
+  </header>
+  <main>
+    <section id="resumo" aria-labelledby="resumo-Titulo">
+        <h2 id="resumo-titulo">Indicadores financeiros</h2>
+        <details open>
+            <summary>saldo em caixa</summary>
+            <p>R$ 6.500,00</p>
+        </details>
+        <details open>
+            <summary>despesas</summary>
+            <p>R$ 2.000,00</p>
+        </details>
+        <details open>
+            <summary>receitas</summary>
+            <p>R$ 800,00</p>
+        </details>
+    </section>
+    <section id="graficos" aria-labelledby="graficos-titulo">
+        <h2 id="graficos-titulo">Gráficos Financeiros</h2>
+        <figure>
+            <figcaption>Receitas x Despesas</figcaption>
+            <p>[Espaço reservado para gráfico de linha]</p>
+        </figure>
+        <figure>
+            <figcaption>Despesas por categoria</figcaption>
+            <p>[Espaço reservado para gráfico de Pizza]</p>
+        </figure>
+    </section>
+    <!--Aqui o conteudo é dividido em dois ARTICLE, cada um com sua própria TFOOT de total-->
+    <section id="contas" aria-labelledby="contas-titulo">
+        <h2 id="contas-titulo">contas a pagar e receber</h2>
+        <article>
+          <h3>A pagar</h3>
+          <table>
+            <caption>Contas a pagar pendentes</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Decrição</th>
+                    <th scope="col">Vencimento</th>
+                    <th scope="col">Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>fornecedor de matéria prima</td>
+                    <td>20/07/2026</td>
+                    <td>R$ 18.400,00</td>
+                </tr>
+                <tr>
+                    <td>Folha de pagamento</td>
+                    <td>05/08/2026</td>
+                    <td>R$ 55.000,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total a pagar</td>
+                    <td>R$ 82.600,00</td>
+                </tr>
+            </tfoot>
+          </table>  
+        </article>
+        <article>
+         <h3> A receber </h3>
+         <table>
+            <caption> Contas a receber pendentes</caption>
+         </table> 
+        </article>
+    </section>
+ </main>
+</body>
+</html>
