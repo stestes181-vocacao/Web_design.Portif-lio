@@ -1,0 +1,184 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #0b1026;
+
+    color: white;
+
+    line-height: 1.6;
+}
+
+
+/* CABEÇALHO */
+header {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+header h1 {
+    font-size: 48px;
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+    font-size: 18px;
+}
+
+
+/* INTRODUÇÃO */
+.introducao {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    padding: 30px 20px;
+
+    text-align: center;
+}
+
+
+#titulo-destaque {
+    margin-bottom: 15px;
+}
+
+
+/* CONTEÚDO */
+main {
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* GRID DOS CARDS */
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 20px;
+}
+
+
+/* CARD */
+.card {
+    background-color: #171d3b;
+
+    padding: 25px;
+
+    border: 1px solid #3b4268;
+
+    border-radius: 15px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* EFEITO DO CARD */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* BOTÃO */
+.botao-container {
+    text-align: center;
+
+    margin: 30px 0;
+}
+
+
+.botao {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background-color: white;
+
+    color: #0b1026;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* EFEITO DO BOTÃO */
+.botao:hover {
+    transform: scale(1.05);
+}
+
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-top: 30px;
+
+    border-top: 1px solid #3b4268;
+}
+
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+}
