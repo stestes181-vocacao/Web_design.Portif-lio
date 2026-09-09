@@ -1,0 +1,26 @@
+/*Reset básico*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Tipografia global */
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(103, 234, 199);
+}
+.Topo{
+    background: linear-gradient( #9c52b3, #3fb969);
+    color: rgb(124, 221, 150);
+    padding:1rem 2rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+}
+.menu a{
+    color: #9c52b3;
+    margin-left: 1.5rem;
+    text-decoration: none;
+}
