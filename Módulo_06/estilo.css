@@ -1,0 +1,645 @@
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d0d12;
+    color: #f5f1e8;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+    width: 100%;
+    padding: 25px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #282831;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #c9a96e;
+    margin-right: 8px;
+}
+
+.menu {
+    list-style: none;
+
+    display: flex;
+    gap: 35px;
+}
+
+.menu a {
+    color: #b8b5ae;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c9a96e;
+}
+
+.botao-nav {
+    border: 1px solid #c9a96e;
+    padding: 10px 22px;
+
+    color: #c9a96e;
+
+    transition: 0.3s;
+}
+
+.botao-nav:hover {
+    background-color: #c9a96e;
+    color: #0d0d12;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    min-height: 650px;
+    padding: 80px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-texto {
+    max-width: 650px;
+}
+
+.subtitulo {
+    color: #c9a96e;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 6vw, 82px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #c9a96e;
+}
+
+.descricao {
+    color: #aaa7a1;
+    max-width: 540px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.botao-principal,
+.botao-secundario {
+    display: inline-block;
+    padding: 14px 25px;
+
+    border: 1px solid #c9a96e;
+
+    transition: 0.3s;
+}
+
+.botao-principal {
+    background-color: #c9a96e;
+    color: #0d0d12;
+}
+
+.botao-principal:hover {
+    transform: translateY(-4px);
+    background-color: #e0c38a;
+}
+
+.botao-secundario {
+    color: #c9a96e;
+}
+
+.botao-secundario:hover {
+    background-color: #c9a96e;
+    color: #0d0d12;
+}
+
+
+/* =========================================
+   GEMA DO HERO
+========================================= */
+
+.hero-gema {
+    width: 380px;
+    height: 380px;
+
+    border: 1px solid #363641;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    background: radial-gradient(
+        circle,
+        #29233b,
+        #12121a 65%
+    );
+}
+
+.hero-gema .gema {
+    font-size: 130px;
+
+    filter: drop-shadow(
+        0 0 30px #8f78c9
+    );
+}
+
+.hero-gema p {
+    color: #c9a96e;
+    letter-spacing: 4px;
+    font-size: 11px;
+}
+
+.brilho {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+
+    color: #c9a96e;
+    font-size: 25px;
+}
+
+
+/* =========================================
+   COLEÇÃO
+========================================= */
+
+.colecao {
+    padding: 100px 7%;
+    background-color: #111117;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    margin-bottom: 50px;
+}
+
+.titulo-secao h2,
+.sobre h2 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.1;
+}
+
+.titulo-secao > p {
+    max-width: 350px;
+    color: #aaa7a1;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.grid-gemas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.card-gema {
+    background-color: #19191f;
+
+    border: 1px solid #292932;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card-gema:hover {
+    transform: translateY(-8px);
+    border-color: #c9a96e;
+}
+
+.card-gema.destaque {
+    border-color: #c9a96e;
+}
+
+
+/* =========================================
+   IMAGENS DAS GEMAS
+========================================= */
+
+.imagem-gema {
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 50px;
+
+    border-bottom: 1px solid #292932;
+}
+
+.imagem-gema span {
+    filter: drop-shadow(
+        0 0 20px rgba(255, 255, 255, 0.5)
+    );
+}
+
+.esmeralda {
+    background:
+        radial-gradient(
+            circle,
+            #226b52,
+            #10251f
+        );
+}
+
+.ametista {
+    background:
+        radial-gradient(
+            circle,
+            #7055a8,
+            #241b35
+        );
+}
+
+.safira {
+    background:
+        radial-gradient(
+            circle,
+            #3569ad,
+            #111e35
+        );
+}
+
+.rubi {
+    background:
+        radial-gradient(
+            circle,
+            #9c3b4d,
+            #35131c
+        );
+}
+
+
+/* =========================================
+   CONTEÚDO DOS CARDS
+========================================= */
+
+.conteudo-card {
+    padding: 25px;
+}
+
+.numero {
+    color: #c9a96e;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.conteudo-card h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.conteudo-card > p:not(.numero) {
+    color: #9f9ca0;
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+
+.conteudo-card button {
+    background: none;
+    border: none;
+
+    color: #c9a96e;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.conteudo-card button:hover {
+    letter-spacing: 1px;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.sobre {
+    padding: 110px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+.sobre-imagem {
+    min-height: 500px;
+
+    border: 1px solid #393943;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #302745,
+            #111117 70%
+        );
+}
+
+.simbolo {
+    font-size: 100px;
+    color: #c9a96e;
+
+    filter: drop-shadow(
+        0 0 30px #8067b2
+    );
+}
+
+.sobre-texto {
+    max-width: 550px;
+}
+
+.sobre-texto h2 {
+    margin-bottom: 25px;
+}
+
+.sobre-texto p:not(.subtitulo) {
+    color: #aaa7a1;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    padding: 35px 7%;
+
+    border-top: 1px solid #282831;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: #77757b;
+}
+
+footer .logo {
+    color: #f5f1e8;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-gema {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-gema .gema {
+        font-size: 100px;
+    }
+
+    .grid-gemas {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .sobre {
+        gap: 45px;
+    }
+
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px 6%;
+
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+
+        gap: 20px;
+
+        font-size: 14px;
+    }
+
+    .botao-nav {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+
+        padding: 70px 6%;
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .descricao {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .hero-gema {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    /* COLEÇÃO */
+
+    .colecao {
+        padding: 75px 6%;
+    }
+
+    .titulo-secao {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .grid-gemas {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* SOBRE */
+
+    .sobre {
+        padding: 75px 6%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .sobre-imagem {
+        min-height: 300px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    .sobre-texto .botao-principal {
+        margin-top: 10px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-gema {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-gema .gema {
+        font-size: 80px;
+    }
+
+    .botao-principal,
+    .botao-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+}
