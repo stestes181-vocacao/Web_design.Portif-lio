@@ -1,0 +1,168 @@
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .hero-gema {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-gema .gema {
+        font-size: 100px;
+    }
+
+    .grid-gemas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre {
+        gap: 45px;
+    }
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .menu {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .botao-nav {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 70px 6%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .descricao {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .hero-gema {
+        width: 280px;
+        height: 280px;
+    }
+
+    .colecao {
+        padding: 75px 6%;
+    }
+
+    .titulo-secao {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .grid-gemas {
+        grid-template-columns: 1fr;
+    }
+
+    .imagem-gema {
+        height: 260px;
+    }
+
+    .sobre {
+        padding: 75px 6%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .sobre-imagem {
+        min-height: 300px;
+    }
+
+    .sobre-imagem img {
+        height: 300px;
+    }
+
+    .sobre-texto {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+========================================= */
+
+@media (max-width: 400px) {
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .menu {
+        gap: 12px;
+    }
+
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-gema {
+        width: 240px;
+        height: 240px;
+    }
+
+    .hero-gema .gema {
+        font-size: 80px;
+    }
+
+    .botao-principal,
+    .botao-secundario {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem-gema {
+        height: 230px;
+    }
+
+    .sobre-imagem img {
+        height: 230px;
+    }
+}

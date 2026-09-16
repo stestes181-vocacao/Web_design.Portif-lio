@@ -26,7 +26,6 @@ a {
 
 button {
     font-family: inherit;
-    cursor: pointer;
 }
 
 
@@ -37,11 +36,9 @@ button {
 .navbar {
     width: 100%;
     padding: 25px 7%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     border-bottom: 1px solid #282831;
 }
 
@@ -58,7 +55,6 @@ button {
 
 .menu {
     list-style: none;
-
     display: flex;
     gap: 35px;
 }
@@ -73,12 +69,9 @@ button {
 }
 
 .botao-nav {
-    padding: 10px 22px;
-
-    color: #c9a96e;
-
     border: 1px solid #c9a96e;
-
+    padding: 10px 22px;
+    color: #c9a96e;
     transition: 0.3s;
 }
 
@@ -95,11 +88,9 @@ button {
 .hero {
     min-height: 650px;
     padding: 80px 7%;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 60px;
 }
 
@@ -109,18 +100,15 @@ button {
 
 .subtitulo {
     color: #c9a96e;
-
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
-
     margin-bottom: 18px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 6vw, 82px);
     line-height: 1.05;
-
     margin-bottom: 25px;
 }
 
@@ -129,10 +117,8 @@ button {
 }
 
 .descricao {
-    max-width: 540px;
-
     color: #aaa7a1;
-
+    max-width: 540px;
     margin-bottom: 35px;
 }
 
@@ -142,15 +128,18 @@ button {
     flex-wrap: wrap;
 }
 
+
+/* =========================================
+   BOTÕES
+========================================= */
+
 .botao-principal,
 .botao-secundario {
     display: inline-block;
-
     padding: 14px 25px;
-
     border: 1px solid #c9a96e;
-
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .botao-principal {
@@ -159,12 +148,13 @@ button {
 }
 
 .botao-principal:hover {
-    background-color: #e0c38a;
     transform: translateY(-4px);
+    background-color: #e0c38a;
 }
 
 .botao-secundario {
     color: #c9a96e;
+    background-color: transparent;
 }
 
 .botao-secundario:hover {
@@ -178,19 +168,15 @@ button {
 ========================================= */
 
 .hero-gema {
-    position: relative;
-
     width: 380px;
     height: 380px;
-
+    border: 1px solid #363641;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    border: 1px solid #363641;
-    border-radius: 50%;
-
+    position: relative;
     background: radial-gradient(
         circle,
         #29233b,
@@ -200,7 +186,6 @@ button {
 
 .hero-gema .gema {
     font-size: 130px;
-
     filter: drop-shadow(
         0 0 30px #8f78c9
     );
@@ -208,17 +193,14 @@ button {
 
 .hero-gema p {
     color: #c9a96e;
-
-    font-size: 11px;
     letter-spacing: 4px;
+    font-size: 11px;
 }
 
 .brilho {
     position: absolute;
-
     top: 50px;
     right: 80px;
-
     color: #c9a96e;
     font-size: 25px;
 }
@@ -230,15 +212,13 @@ button {
 
 .colecao {
     padding: 100px 7%;
-
     background-color: #111117;
 }
 
 .titulo-secao {
     display: flex;
-    align-items: end;
     justify-content: space-between;
-
+    align-items: end;
     margin-bottom: 50px;
 }
 
@@ -250,7 +230,6 @@ button {
 
 .titulo-secao > p {
     max-width: 350px;
-
     color: #aaa7a1;
 }
 
@@ -261,19 +240,14 @@ button {
 
 .grid-gemas {
     display: grid;
-
     grid-template-columns: repeat(4, 1fr);
-
     gap: 20px;
 }
 
 .card-gema {
-    overflow: hidden;
-
     background-color: #19191f;
-
     border: 1px solid #292932;
-
+    overflow: hidden;
     transition: 0.3s;
 }
 
@@ -294,23 +268,18 @@ button {
 .imagem-gema {
     width: 100%;
     height: 260px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
-    overflow: hidden;
-
     border-bottom: 1px solid #292932;
+    overflow: hidden;
 }
 
 .imagem-gema img {
     width: 100%;
     height: 100%;
-
-    display: block;
-
     object-fit: cover;
+    display: block;
 }
 
 
@@ -361,32 +330,26 @@ button {
 
 .numero {
     color: #c9a96e;
-
     font-size: 12px;
-
     margin-bottom: 10px;
 }
 
 .conteudo-card h3 {
     font-size: 25px;
-
     margin-bottom: 10px;
 }
 
 .conteudo-card > p:not(.numero) {
     color: #9f9ca0;
-
     font-size: 14px;
-
     margin-bottom: 20px;
 }
 
 .conteudo-card button {
     background: none;
     border: none;
-
     color: #c9a96e;
-
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -401,41 +364,31 @@ button {
 
 .sobre {
     padding: 110px 7%;
-
     display: grid;
-
     grid-template-columns: 1fr 1fr;
-
     gap: 80px;
-
     align-items: center;
 }
 
 .sobre-imagem {
     min-height: 500px;
-
+    border: 1px solid #393943;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    overflow: hidden;
-
-    border: 1px solid #393943;
-
     background: radial-gradient(
         circle,
         #302745,
         #111117 70%
     );
+    overflow: hidden;
 }
 
 .sobre-imagem img {
     width: 100%;
     height: 500px;
-
-    display: block;
-
     object-fit: cover;
+    display: block;
 }
 
 .sobre-texto {
@@ -448,12 +401,7 @@ button {
 
 .sobre-texto p:not(.subtitulo) {
     color: #aaa7a1;
-
     margin-bottom: 20px;
-}
-
-.sobre-texto .botao-principal {
-    margin-top: 10px;
 }
 
 
@@ -463,16 +411,12 @@ button {
 
 footer {
     padding: 35px 7%;
-
+    border-top: 1px solid #282831;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     gap: 20px;
-
     color: #77757b;
-
-    border-top: 1px solid #282831;
 }
 
 footer .logo {
@@ -481,204 +425,4 @@ footer .logo {
 
 .copyright {
     font-size: 13px;
-}
-
-
-/* =========================================
-   TABLETS
-========================================= */
-
-@media (max-width: 1000px) {
-
-    .hero {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    .hero-gema {
-        width: 300px;
-        height: 300px;
-    }
-
-    .hero-gema .gema {
-        font-size: 100px;
-    }
-
-    .grid-gemas {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .sobre {
-        gap: 45px;
-    }
-}
-
-
-/* =========================================
-   CELULARES
-========================================= */
-
-@media (max-width: 700px) {
-
-    /* NAVBAR */
-
-    .navbar {
-        padding: 20px 6%;
-
-        flex-wrap: wrap;
-
-        gap: 20px;
-    }
-
-    .menu {
-        order: 3;
-
-        width: 100%;
-
-        justify-content: center;
-
-        gap: 20px;
-
-        font-size: 14px;
-    }
-
-    .botao-nav {
-        padding: 8px 15px;
-
-        font-size: 13px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        min-height: auto;
-
-        padding: 70px 6%;
-
-        flex-direction: column;
-
-        text-align: center;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-    }
-
-    .descricao {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .botoes {
-        justify-content: center;
-    }
-
-    .hero-gema {
-        width: 280px;
-        height: 280px;
-    }
-
-
-    /* COLEÇÃO */
-
-    .colecao {
-        padding: 75px 6%;
-    }
-
-    .titulo-secao {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
-    }
-
-    .grid-gemas {
-        grid-template-columns: 1fr;
-    }
-
-    .imagem-gema {
-        height: 260px;
-    }
-
-
-    /* SOBRE */
-
-    .sobre {
-        padding: 75px 6%;
-
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-    }
-
-    .sobre-imagem {
-        min-height: 300px;
-    }
-
-    .sobre-imagem img {
-        height: 300px;
-    }
-
-    .sobre-texto {
-        text-align: center;
-    }
-
-
-    /* FOOTER */
-
-    footer {
-        flex-direction: column;
-
-        text-align: center;
-    }
-}
-
-
-/* =========================================
-   CELULARES PEQUENOS
-========================================= */
-
-@media (max-width: 400px) {
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .menu {
-        gap: 12px;
-    }
-
-    .hero {
-        padding-top: 50px;
-    }
-
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero-gema {
-        width: 240px;
-        height: 240px;
-    }
-
-    .hero-gema .gema {
-        font-size: 80px;
-    }
-
-    .botao-principal,
-    .botao-secundario {
-        width: 100%;
-
-        text-align: center;
-    }
-
-    .imagem-gema {
-        height: 230px;
-    }
-
-    .sobre-imagem img {
-        height: 230px;
-    }
 }
