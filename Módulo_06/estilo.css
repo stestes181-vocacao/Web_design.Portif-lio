@@ -26,6 +26,7 @@ a {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 
@@ -72,10 +73,11 @@ button {
 }
 
 .botao-nav {
-    border: 1px solid #c9a96e;
     padding: 10px 22px;
 
     color: #c9a96e;
+
+    border: 1px solid #c9a96e;
 
     transition: 0.3s;
 }
@@ -97,6 +99,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     gap: 60px;
 }
 
@@ -106,15 +109,18 @@ button {
 
 .subtitulo {
     color: #c9a96e;
+
     font-size: 13px;
     font-weight: bold;
     letter-spacing: 3px;
+
     margin-bottom: 18px;
 }
 
 .hero h1 {
     font-size: clamp(45px, 6vw, 82px);
     line-height: 1.05;
+
     margin-bottom: 25px;
 }
 
@@ -123,8 +129,10 @@ button {
 }
 
 .descricao {
-    color: #aaa7a1;
     max-width: 540px;
+
+    color: #aaa7a1;
+
     margin-bottom: 35px;
 }
 
@@ -137,6 +145,7 @@ button {
 .botao-principal,
 .botao-secundario {
     display: inline-block;
+
     padding: 14px 25px;
 
     border: 1px solid #c9a96e;
@@ -150,8 +159,8 @@ button {
 }
 
 .botao-principal:hover {
-    transform: translateY(-4px);
     background-color: #e0c38a;
+    transform: translateY(-4px);
 }
 
 .botao-secundario {
@@ -169,18 +178,18 @@ button {
 ========================================= */
 
 .hero-gema {
+    position: relative;
+
     width: 380px;
     height: 380px;
-
-    border: 1px solid #363641;
-    border-radius: 50%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    position: relative;
+    border: 1px solid #363641;
+    border-radius: 50%;
 
     background: radial-gradient(
         circle,
@@ -199,12 +208,14 @@ button {
 
 .hero-gema p {
     color: #c9a96e;
-    letter-spacing: 4px;
+
     font-size: 11px;
+    letter-spacing: 4px;
 }
 
 .brilho {
     position: absolute;
+
     top: 50px;
     right: 80px;
 
@@ -219,13 +230,14 @@ button {
 
 .colecao {
     padding: 100px 7%;
+
     background-color: #111117;
 }
 
 .titulo-secao {
     display: flex;
-    justify-content: space-between;
     align-items: end;
+    justify-content: space-between;
 
     margin-bottom: 50px;
 }
@@ -238,29 +250,29 @@ button {
 
 .titulo-secao > p {
     max-width: 350px;
+
     color: #aaa7a1;
 }
 
 
 /* =========================================
-   GRID
+   GRID DAS GEMAS
 ========================================= */
 
 .grid-gemas {
     display: grid;
 
-    grid-template-columns:
-        repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 
     gap: 20px;
 }
 
 .card-gema {
+    overflow: hidden;
+
     background-color: #19191f;
 
     border: 1px solid #292932;
-
-    overflow: hidden;
 
     transition: 0.3s;
 }
@@ -287,18 +299,18 @@ button {
     align-items: center;
     justify-content: center;
 
-    border-bottom: 1px solid #292932;
-
     overflow: hidden;
+
+    border-bottom: 1px solid #292932;
 }
 
 .imagem-gema img {
     width: 100%;
     height: 100%;
 
-    object-fit: cover;
-
     display: block;
+
+    object-fit: cover;
 }
 
 
@@ -307,39 +319,35 @@ button {
 ========================================= */
 
 .esmeralda {
-    background:
-        radial-gradient(
-            circle,
-            #226b52,
-            #10251f
-        );
+    background: radial-gradient(
+        circle,
+        #226b52,
+        #10251f
+    );
 }
 
 .ametista {
-    background:
-        radial-gradient(
-            circle,
-            #7055a8,
-            #241b35
-        );
+    background: radial-gradient(
+        circle,
+        #7055a8,
+        #241b35
+    );
 }
 
 .safira {
-    background:
-        radial-gradient(
-            circle,
-            #3569ad,
-            #111e35
-        );
+    background: radial-gradient(
+        circle,
+        #3569ad,
+        #111e35
+    );
 }
 
 .rubi {
-    background:
-        radial-gradient(
-            circle,
-            #9c3b4d,
-            #35131c
-        );
+    background: radial-gradient(
+        circle,
+        #9c3b4d,
+        #35131c
+    );
 }
 
 
@@ -353,17 +361,21 @@ button {
 
 .numero {
     color: #c9a96e;
+
     font-size: 12px;
+
     margin-bottom: 10px;
 }
 
 .conteudo-card h3 {
     font-size: 25px;
+
     margin-bottom: 10px;
 }
 
 .conteudo-card > p:not(.numero) {
     color: #9f9ca0;
+
     font-size: 14px;
 
     margin-bottom: 20px;
@@ -375,8 +387,6 @@ button {
 
     color: #c9a96e;
 
-    cursor: pointer;
-
     transition: 0.3s;
 }
 
@@ -386,7 +396,7 @@ button {
 
 
 /* =========================================
-   SOBRE
+   SOBRE O ARQUIVO
 ========================================= */
 
 .sobre {
@@ -394,8 +404,7 @@ button {
 
     display: grid;
 
-    grid-template-columns:
-        1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 
     gap: 80px;
 
@@ -405,27 +414,28 @@ button {
 .sobre-imagem {
     min-height: 500px;
 
-    border: 1px solid #393943;
-
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background:
-        radial-gradient(
-            circle,
-            #302745,
-            #111117 70%
-        );
+    overflow: hidden;
+
+    border: 1px solid #393943;
+
+    background: radial-gradient(
+        circle,
+        #302745,
+        #111117 70%
+    );
 }
 
-.simbolo {
-    font-size: 100px;
-    color: #c9a96e;
+.sobre-imagem img {
+    width: 100%;
+    height: 500px;
 
-    filter: drop-shadow(
-        0 0 30px #8067b2
-    );
+    display: block;
+
+    object-fit: cover;
 }
 
 .sobre-texto {
@@ -438,7 +448,12 @@ button {
 
 .sobre-texto p:not(.subtitulo) {
     color: #aaa7a1;
+
     margin-bottom: 20px;
+}
+
+.sobre-texto .botao-principal {
+    margin-top: 10px;
 }
 
 
@@ -449,8 +464,6 @@ button {
 footer {
     padding: 35px 7%;
 
-    border-top: 1px solid #282831;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -458,6 +471,8 @@ footer {
     gap: 20px;
 
     color: #77757b;
+
+    border-top: 1px solid #282831;
 }
 
 footer .logo {
@@ -470,7 +485,7 @@ footer .logo {
 
 
 /* =========================================
-   TABLET
+   TABLETS
 ========================================= */
 
 @media (max-width: 1000px) {
@@ -490,27 +505,28 @@ footer .logo {
     }
 
     .grid-gemas {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sobre {
         gap: 45px;
     }
-
 }
 
 
 /* =========================================
-   CELULAR
+   CELULARES
 ========================================= */
 
 @media (max-width: 700px) {
+
+    /* NAVBAR */
 
     .navbar {
         padding: 20px 6%;
 
         flex-wrap: wrap;
+
         gap: 20px;
     }
 
@@ -528,6 +544,7 @@ footer .logo {
 
     .botao-nav {
         padding: 8px 15px;
+
         font-size: 13px;
     }
 
@@ -571,6 +588,7 @@ footer .logo {
 
     .titulo-secao {
         flex-direction: column;
+
         align-items: flex-start;
 
         gap: 20px;
@@ -599,12 +617,12 @@ footer .logo {
         min-height: 300px;
     }
 
-    .sobre-texto {
-        text-align: center;
+    .sobre-imagem img {
+        height: 300px;
     }
 
-    .sobre-texto .botao-principal {
-        margin-top: 10px;
+    .sobre-texto {
+        text-align: center;
     }
 
 
@@ -612,9 +630,9 @@ footer .logo {
 
     footer {
         flex-direction: column;
+
         text-align: center;
     }
-
 }
 
 
@@ -652,6 +670,7 @@ footer .logo {
     .botao-principal,
     .botao-secundario {
         width: 100%;
+
         text-align: center;
     }
 
@@ -659,4 +678,7 @@ footer .logo {
         height: 230px;
     }
 
+    .sobre-imagem img {
+        height: 230px;
+    }
 }
