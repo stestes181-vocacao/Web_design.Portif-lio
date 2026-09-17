@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Vôlei - Interações com JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🏐 Sobre Vôlei</h1>
+    <p>Página interativa criada com HTML, CSS e JavaScript</p>
+    <button id="btn-tema">🌙 Alternar tema</button>
+  </header>
+
+  <main>
+
+    <section class="card">
+      <h2>O que é o Vôlei?</h2>
+      <p>
+        O voleibol é um esporte coletivo disputado entre duas equipes,
+        separadas por uma rede, onde o objetivo é fazer a bola tocar
+        o chão do campo adversário.
+      </p>
+      <button id="btn-curiosidade">Mostrar curiosidade</button>
+      <p id="texto-curiosidade" class="escondido"></p>
+    </section>
+
+    <section class="card">
+      <h2>Placar da Partida</h2>
+      <div class="placar">
+        <div class="time">
+          <h3>Time A</h3>
+          <p id="pontos-a">0</p>
+          <button class="btn-mais" data-time="a">+1</button>
+          <button class="btn-menos" data-time="a">-1</button>
+        </div>
+        <div class="time">
+          <h3>Time B</h3>
+          <p id="pontos-b">0</p>
+          <button class="btn-mais" data-time="b">+1</button>
+          <button class="btn-menos" data-time="b">-1</button>
+        </div>
+      </div>
+      <p id="mensagem-vencedor"></p>
+      <button id="btn-zerar">Zerar placar</button>
+    </section>
+
+    <section class="card">
+      <h2>Quiz Rápido</h2>
+      <p>Quantos jogadores de cada time ficam em quadra no vôlei?</p>
+      <div class="opcoes">
+        <button class="opcao" data-correta="false">5</button>
+        <button class="opcao" data-correta="true">6</button>
+        <button class="opcao" data-correta="false">7</button>
+      </div>
+      <p id="resultado-quiz"></p>
+    </section>
+
+    <section class="card">
+      <h2>Fale sobre seu time favorito</h2>
+      <input type="text" id="input-time" placeholder="Digite o nome do time...">
+      <button id="btn-mostrar-time">Mostrar</button>
+      <p id="saida-time"></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p> Stefani - Criando Interações com JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
